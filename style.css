@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Open+Sans&display=swap');
+
+/* variáveis */
+:root{
+
+	--verde-claro: #038C25;
+	--verde-vivo: #55D95D;
+	--preto: #00060D;
+	--verde-escuro: #537334;
+
+
+	--fonte-principal: 'Caveat', cursive;
+	--fonte-secundaria: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: var(--fonte-principal);
+}
+
+/* customização da barra de navegação */
+#barra-nav {
+	background-color: var(--verde-claro);
+	padding: 1rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+
+/* lista não ordenada da barra de navegação */
+#barra-nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	padding-right: 5rem;
+}
+
+/* itens de lista da barra de navegação */
+#barra-nav li {
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: 600;
+	padding: 5px 2px;
+}
+
+#barra-nav .nav-link:hover {
+	color: var(--verde-vivo);
+	text-decoration: none;
+}
+
+#logo img {
+	display: inline-block;
+	position: relative;
+	left: 5rem;	
+}
